@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Auction Site</title>
+
+    <!-- CSS  -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--ICONS CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/whitelogo.png" alt="Logo" style="width:50px;">
+            </a>
+
+            <!-- Navigation Bar -->
+            <ul class="navbar-nav">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Cars</a>
+                        <a class="dropdown-item" href="#">Electronics</a>
+                        <a class="dropdown-item" href="#">Outdoors</a>
+                        <a class="dropdown-item" href="#">Watches</a>
+                        <a class="dropdown-item" href="#">Sports</a>
+                        <a class="dropdown-item" href="#">Clothing</a>
+                    </div>
+                </li>
+                <!-- Search Bar -->
+                <li class="nav-item">
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-12" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/sell.html">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/wishlist.html">
+                        <i class="fas fa-star fa-lg" style="color: #ffffff;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/basket.html">
+                        <i class="fas fa-shopping-basket fa-lg" style="color: #ffffff;"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="logout">Logout</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/products.html">All Auctions</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--FEATURED CATEGORIES-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Featured Categories</h3>
+                <div class="card-columns">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/carlogo.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Cars</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/electronicslogo.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Electronics</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/outdoorslogo.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Outdoors</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-columns">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/watchesicon.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Watches</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/clothingicon.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Clothing</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/sportsicon.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Sports</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECENTLY Viewed Auctions-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Recently Viewed Auctions</h3>
+                <div class="card-columns">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-columns">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">Item Name</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--HOT AUCTIONS-->
+    <div class="container">
+        <div class="row">
+            <div class="p-5">
+                <h3>Hot Auctions</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Item Name</p>
+                        <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                    </div>
+                </div>
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Item Name</p>
+                        <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                    </div>
+                </div>
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Item Name</p>
+                        <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                    </div>
+                </div>
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/products/img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Item Name</p>
+                        <a href="#" class="btn btn-primary stretched-link">View Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="footer">
+            <a class="nav-link" href="pages/contact.html" style="color: gray;">Help and contact</a>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
